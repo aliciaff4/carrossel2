@@ -1,0 +1,110 @@
+@font-face {
+    font-family: eu;
+    src: url(./fontes/Hello\ Valentina.ttf);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(173, 159, 94);
+}
+
+h1{
+    font-family: eu;
+    font-weight: 900;
+    font-size: 5em;
+    margin-top: 1px;
+    text-align: center;
+    color: rgb(83, 43, 6);
+}
+
+.container{
+    height: 460px;
+    width: 800px;
+    overflow: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.imagem img{
+    height: 100%;
+    width: 100%;
+}
+
+input{
+    display: none;
+}
+
+.bar{
+    background-color: burlywood;
+    width: 30px;
+    height: 5px;
+    margin: 5px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.bar:hover{
+    background-color: rgb(226, 75, 75);
+}
+
+.navegacao{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    display: flex;
+    transform: translate(-50%);
+}
+
+.imagens{
+    display: flex;
+    height: 100%;
+    width: 800%;
+}
+
+.imagem{
+    width: 12.5%;
+    transition: all 1s ease-in-out;
+}
+
+#imagem1:checked ~ .img1{
+    margin: 0;
+}
+
+#imagem2:checked ~ .img1{
+    margin-left: -12.5%;
+}
+
+#imagem3:checked ~ .img1{
+    margin-left: -25%;
+}
+
+#imagem4:checked ~ .img1{
+    margin-left: -37.5%;
+}
+
+#imagem5:checked ~ .img1{
+    margin-left: -50%;
+}
+
+#imagem6:checked ~ .img1{
+    margin-left: -62.5%;
+}
+
+#imagem7:checked ~ .img1{
+    margin-left: -75%;
+}
+
+#imagem8:checked ~ .img1{
+    margin-left: -87.5%;
+}
+    
+footer{
+    bottom: 10px;
+    position: fixed;
+    width: 100%;
+    text-align: center;
+}
+
